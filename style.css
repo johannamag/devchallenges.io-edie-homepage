@@ -356,7 +356,7 @@ section {
 }
 
 .work-img {
-  width: 100%;
+  max-width: 100%;
   max-height: 545px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -409,6 +409,7 @@ section {
 
 .team-left {
   flex: 120%;
+  width: 100%;
   padding-right: 100px;
 }
 
@@ -429,26 +430,30 @@ section {
 
 .team-right {
   flex: 180%;
+  width: 100%;
 }
 
 .image-flex {
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .team-big {
   margin-right: 20px;
   border-radius: 24px;
+  max-width: 320px;
 }
 
 .team-small {
   border-radius: 24px;
   margin-bottom: 15px;
+  max-width: 260px;
 }
 
 .team-mid {
   border-radius: 24px;
+  max-width: 290px;
 }
 
 .clients-text {
@@ -568,4 +573,176 @@ section {
 
 .link:hover {
   color: var(--red);
+}
+
+@media screen and (max-width: 956px) {
+  .hero-text {
+    margin-left: 50px;
+  }
+  .hero-join {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  .cards {
+    grid-gap: 20px;
+  }
+  .left {
+    margin-right: 10px;
+  }
+  .right {
+    margin-left: 10px;
+  }
+  .team-left {
+    padding-right: 20px;
+  }
+  .team-big {
+    width: 250px;
+  }
+  .team-mid {
+    width: 220px;
+  }
+  .team-small {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .socials {
+    grid-column: 4 / 8;
+  }
+  .footer-form {
+    grid-column: 8 / 13;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .team-big {
+    max-width: 200px;
+  }
+  .team-mid {
+    max-width: 180px;
+  }
+  .team-small {
+    max-width: 150px;
+  }
+  .cards {
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .hero-text,
+  .hero-join {
+    margin-left: 0;
+    width: 100%;
+  }
+  .blue-sub {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .home-heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .hero-img {
+    margin-bottom: 20px;
+  }
+  .join-desc {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font: 12px;
+  }
+  .join-small {
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .work-desc {
+    font-size: 12px;
+  }
+  .work-name {
+    font-size: 18px;
+  }
+  .btn-more {
+    font-size: 18px;
+  }
+  .clients-text {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .profile-name {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .team-flex {
+    flex-direction: column;
+  }
+  .team-right {
+    margin-top: 30px;
+  }
+  .works-flex {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .left {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .right {
+    margin-left: 0;
+  }
+  .btn-more {
+    margin-top: 20px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-links {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 50px;
+  }
+  .socials {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-bottom: 50px;
+  }
+  .footer-form {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .team-big {
+    width: 180px;
+  }
+  .team-mid {
+    width: 150px;
+  }
+  .team-small {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .team-big {
+    width: 140px;
+  }
+  .team-mid {
+    width: 110px;
+  }
+  .team-small {
+    width: 80px;
+  }
 }
