@@ -450,3 +450,41 @@ section {
 .team-mid {
   border-radius: 24px;
 }
+
+.clients-text {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--gray-1);
+  max-width: 930px;
+  margin-bottom: 35px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  margin-right: 30px;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--gray-1);
+  margin-bottom: 12px;
+}
+
+.profile-job {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--gray-3);
+}
+
+.clients {
+  padding-bottom: 100px;
+}
