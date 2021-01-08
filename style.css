@@ -401,3 +401,52 @@ section {
 .btn-more:hover {
   color: var(--red);
 }
+
+.team-flex {
+  display: flex;
+  align-items: center;
+}
+
+.team-left {
+  flex: 120%;
+  padding-right: 100px;
+}
+
+.team-sub {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--red);
+  margin-bottom: 7px;
+}
+
+.team-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-2);
+  margin-top: 14px;
+}
+
+.team-right {
+  flex: 180%;
+}
+
+.image-flex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.team-big {
+  margin-right: 20px;
+  border-radius: 24px;
+}
+
+.team-small {
+  border-radius: 24px;
+  margin-bottom: 15px;
+}
+
+.team-mid {
+  border-radius: 24px;
+}
